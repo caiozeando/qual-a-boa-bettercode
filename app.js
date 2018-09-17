@@ -25,23 +25,4 @@ const retrieveData = (KEY, URL, endPoint) => {
 retrieveData(KEY, URLEVENTS, EVENTSENDPOINT);
 retrieveData(KEY, URLCATEGORIES, CATEGORIESENDPOINT);
 
-
-/* 
-
-app.get('/events', (req, res) => {
-    req.query.key = KEY;
-
-    request.get({ url: URLEVENTS, qs: req.query, json: true}, (err, _, body) => {
-        err ? res.json(err): res.json(body)
-    })
-})
-
-app.get('/events/categories', (req, res) => {
-    req.query.key = KEY;
-    
-    request.get({ url: URLCATEGORIES, qs: req.query, json: true}, (err, _, body) => {
-        err ? res.json(err): res.json(body)
-    })
-}) */
-
 app.listen(PORT, () => console.log(`Example app listening on port ${ PORT }!`))

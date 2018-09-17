@@ -42,8 +42,6 @@ export default class EventList extends React.Component {
                     name={event.name}
                     date={event.local_date}
                     time={event.local_time}
-                    //place={event.venue.name}
-                    //address={event.venue.address_1}
                     description ={event.description}
                     attendance={event.attendance_count}
                     avatar={event.featured_photo}
